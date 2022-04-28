@@ -1,0 +1,12 @@
+Players:
+    - 2eoo
+LockedCommands:
+    - pl
+Messages:
+    Prefix: "&f[&bConsole&f]"
+    NoPermission: "&cYou don't have enough permissions."
+    Syntax: "&6Useage: &f/console [Command]"
+    LockedCommand: "&cCommand locked."
+    Complete: "&fCommand &6/%cmd% &fdone."
+
+    

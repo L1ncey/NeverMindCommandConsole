@@ -1,0 +1,7 @@
+main: Lincey.NeverMind.console.Main
+name: NCC
+author: Lincey
+version: 0.1
+commands:
+  console:
+      
