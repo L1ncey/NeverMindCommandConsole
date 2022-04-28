@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 public class Main_CMD implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String lebal, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(Main.getPrefix() + " §cOnly for players.");
+            sender.sendMessage(Main.getPrefix() + " §cPlayers only.");
             return true;
         } else {
             Player p = (Player) sender;
