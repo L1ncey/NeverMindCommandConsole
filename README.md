@@ -1,4 +1,4 @@
-# N*ever*M*ind*C*ommand*C*onsole* [NCC]
+# **N***ever***M***ind***C***ommand***C***onsole* [NCC]
 
 A plugin for Minecraft Spigot Servers.
 
