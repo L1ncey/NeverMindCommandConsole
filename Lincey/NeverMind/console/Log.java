@@ -16,22 +16,23 @@ public class Log {
             fw = new FileWriter(Main.log, true);
             BufferedWriter bw = new BufferedWriter(fw);
             Calendar c = Calendar.getInstance();
-            int month = c.get(2) + 1;
-            int day = c.get(5);
-            int minute = c.get(12);
-            int hour = c.get(11);
+            int month = c.get(Calendar.MONTH) + 1;
+            int day = c.get(Calendar.DATE);
+            int minute = c.get(Calendar.MINUTE);
+            int hour = c.get(Calendar.HOUR_OF_DAY);
             String date = "[" + day + "." + month + " | " + hour + ":" + minute + "]";
             bw.write(date + " " + p.getName() + " used: /" + st);
             bw.newLine();
             fw.flush();
             bw.close();
         } catch (IOException var18) {
-            Bukkit.getLogger().info("§c|ERROR|§f - " + var18.toString());
+            Bukkit.getLogger().info("§c|ERROR|§f - " + var18);
         } finally {
             try {
+                assert fw != null;
                 fw.close();
             } catch (IOException var17) {
-                Bukkit.getLogger().info("§c|ERROR|§f - " + var17.toString());
+                Bukkit.getLogger().info("§c|ERROR|§f - " + var17);
             }
 
         }

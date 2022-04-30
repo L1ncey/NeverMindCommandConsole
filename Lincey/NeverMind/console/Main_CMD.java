@@ -24,12 +24,12 @@ public class Main_CMD implements CommandExecutor {
             } else {
                 StringBuilder st = new StringBuilder();
 
-                for (int i = 0; i < args.length; ++i) {
-                    st.append(args[i]).append(" ");
+                for (String arg : args) {
+                    st.append(arg).append(" ");
                 }
 
                 String command = st.toString().replace("/", "");
-                Iterator var8 = Main.config.getStringList("LockedCommands").iterator();
+                Iterator<String> var8 = Main.config.getStringList("LockedCommands").iterator();
 
                 String str;
                 do {
